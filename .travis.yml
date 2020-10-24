@@ -1,0 +1,26 @@
+language: ruby
+rvm:
+  - 2.5.5
+
+script: bundle exec jekyll build
+
+cache: bundler
+
+branches:
+  only:
+  - master
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: false
+  target_branch: html
+  fqdn: mcibeacon.ml
+  on:
+    branch: master
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
