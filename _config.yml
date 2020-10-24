@@ -52,6 +52,7 @@ exclude:
     Gruntfile.js,
     Gruntfile.coffee,
     node_modules,
+    vendor,
   ]
 
 keep_files: [CNAME,.git,]
