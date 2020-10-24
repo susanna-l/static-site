@@ -13,6 +13,7 @@ branches:
 deploy:
   provider: pages
   skip_cleanup: true
+  local_dir: _site
   github_token: $GITHUB_TOKEN
   keep_history: false
   target_branch: html
